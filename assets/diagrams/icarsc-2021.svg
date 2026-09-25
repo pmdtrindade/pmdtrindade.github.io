@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Top view of the arena: a real and a simulated quadrotor flying the same Lissajous trajectory, tracked by motion capture">
+<style>.dg-plane{fill:color-mix(in srgb,var(--steel,#2f5f8a) 10%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1;stroke-opacity:.5}
+.dg-grid{stroke:var(--line,#d2d7dd);stroke-width:1}
+.dg-axis{fill:none;stroke:var(--muted,#56606b);stroke-width:1.3}
+.dg-label{fill:var(--muted,#56606b);font:700 11px 'Atkinson Hyperlegible',system-ui,sans-serif;letter-spacing:.02em}
+.dg-name{fill:var(--ink,#1b2127);font:700 12px 'Bricolage Grotesque',system-ui,sans-serif}
+.dg-node{fill:var(--surface,#fafbfc);stroke:var(--ink,#1b2127);stroke-width:2}
+.dg-link{fill:none;stroke:var(--muted,#56606b);stroke-width:1.5;stroke-opacity:.7}
+.dg-comm{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.5;stroke-dasharray:6 3 1.5 3}
+.dg-ray{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5;stroke-dasharray:5 4}
+.dg-target{fill:var(--accent,#b0582d)}
+.dg-est{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5}
+.dg-faint{fill:none;stroke:var(--muted,#56606b);stroke-width:1.4;stroke-dasharray:4 4;stroke-opacity:.6}
+.dg-c1{fill:none;stroke:var(--accent,#b0582d);stroke-width:2.2}
+.dg-c2{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:2.2}
+.dg-c3{fill:none;stroke:var(--sage,#5e7d4f);stroke-width:2.2}
+.dg-c4{fill:none;stroke:var(--ink,#1b2127);stroke-width:2.2;stroke-opacity:.75}
+.dg-c5{fill:none;stroke:var(--muted,#56606b);stroke-width:2.2}
+.dg-mark{fill:var(--accent,#b0582d)}
+.dg-packet{fill:var(--accent,#b0582d)}
+.dg-arm{stroke:var(--ink,#1b2127);stroke-width:2.5;stroke-linecap:round}
+.dg-rotor{fill:color-mix(in srgb,var(--steel,#2f5f8a) 25%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1}
+.dg-ghost{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.2;stroke-dasharray:3 2}
+.dg-body{fill:var(--accent,#b0582d)}
+.dg-cam{fill:var(--ink,#1b2127)}
+.dg-cone{stroke:var(--accent,#b0582d);stroke-width:.8;stroke-opacity:.4}</style>
+<path class="dg-grid" d="M40 30V270"/>
+<path class="dg-grid" d="M80 30V270"/>
+<path class="dg-grid" d="M120 30V270"/>
+<path class="dg-grid" d="M160 30V270"/>
+<path class="dg-grid" d="M200 30V270"/>
+<path class="dg-grid" d="M240 30V270"/>
+<path class="dg-grid" d="M280 30V270"/>
+<path class="dg-grid" d="M320 30V270"/>
+<path class="dg-grid" d="M360 30V270"/>
+<path class="dg-grid" d="M40 30H360"/>
+<path class="dg-grid" d="M40 70H360"/>
+<path class="dg-grid" d="M40 110H360"/>
+<path class="dg-grid" d="M40 150H360"/>
+<path class="dg-grid" d="M40 190H360"/>
+<path class="dg-grid" d="M40 230H360"/>
+<path class="dg-grid" d="M40 270H360"/>
+<path class="dg-c1" style="stroke-dasharray:6 4" d="M200.0 150.0 L210.2 155.0 L220.3 159.9 L230.3 164.9 L240.2 169.8 L249.7 174.6 L259.0 179.4 L267.9 184.0 L276.4 188.6 L284.4 193.1 L291.9 197.5 L298.9 201.7 L305.2 205.8 L310.8 209.8 L315.8 213.6 L320.1 217.2 L323.6 220.6 L326.4 223.8 L328.4 226.9 L329.6 229.7 L330.0 232.3 L329.6 234.6 L328.4 236.8 L326.4 238.7 L323.6 240.4 L320.1 241.8 L315.8 242.9 L310.8 243.8 L305.2 244.5 L298.9 244.9 L291.9 245.0 L284.4 244.9 L276.4 244.5 L267.9 243.8 L259.0 242.9 L249.7 241.8 L240.2 240.4 L230.3 238.7 L220.3 236.8 L210.2 234.6 L200.0 232.3 L189.8 229.7 L179.7 226.9 L169.7 223.8 L159.8 220.6 L150.3 217.2 L141.0 213.6 L132.1 209.8 L123.6 205.8 L115.6 201.7 L108.1 197.5 L101.1 193.1 L94.8 188.6 L89.2 184.0 L84.2 179.4 L79.9 174.6 L76.4 169.8 L73.6 164.9 L71.6 159.9 L70.4 155.0 L70.0 150.0 L70.4 145.0 L71.6 140.1 L73.6 135.1 L76.4 130.2 L79.9 125.4 L84.2 120.6 L89.2 116.0 L94.8 111.4 L101.1 106.9 L108.1 102.5 L115.6 98.3 L123.6 94.2 L132.1 90.2 L141.0 86.4 L150.3 82.8 L159.8 79.4 L169.7 76.2 L179.7 73.1 L189.8 70.3 L200.0 67.7 L210.2 65.4 L220.3 63.2 L230.3 61.3 L240.2 59.6 L249.7 58.2 L259.0 57.1 L267.9 56.2 L276.4 55.5 L284.4 55.1 L291.9 55.0 L298.9 55.1 L305.2 55.5 L310.8 56.2 L315.8 57.1 L320.1 58.2 L323.6 59.6 L326.4 61.3 L328.4 63.2 L329.6 65.4 L330.0 67.7 L329.6 70.3 L328.4 73.1 L326.4 76.2 L323.6 79.4 L320.1 82.8 L315.8 86.4 L310.8 90.2 L305.2 94.2 L298.9 98.3 L291.9 102.5 L284.4 106.9 L276.4 111.4 L267.9 116.0 L259.0 120.6 L249.7 125.4 L240.2 130.2 L230.3 135.1 L220.3 140.1 L210.2 145.0 L200.0 150.0 L189.8 155.0 L179.7 159.9 L169.7 164.9 L159.8 169.8 L150.3 174.6 L141.0 179.4 L132.1 184.0 L123.6 188.6 L115.6 193.1 L108.1 197.5 L101.1 201.7 L94.8 205.8 L89.2 209.8 L84.2 213.6 L79.9 217.2 L76.4 220.6 L73.6 223.8 L71.6 226.9 L70.4 229.7 L70.0 232.3 L70.4 234.6 L71.6 236.8 L73.6 238.7 L76.4 240.4 L79.9 241.8 L84.2 242.9 L89.2 243.8 L94.8 244.5 L101.1 244.9 L108.1 245.0 L115.6 244.9 L123.6 244.5 L132.1 243.8 L141.0 242.9 L150.3 241.8 L159.8 240.4 L169.7 238.7 L179.7 236.8 L189.8 234.6 L200.0 232.3 L210.2 229.7 L220.3 226.9 L230.3 223.8 L240.2 220.6 L249.7 217.2 L259.0 213.6 L267.9 209.8 L276.4 205.8 L284.4 201.7 L291.9 197.5 L298.9 193.1 L305.2 188.6 L310.8 184.0 L315.8 179.4 L320.1 174.6 L323.6 169.8 L326.4 164.9 L328.4 159.9 L329.6 155.0 L330.0 150.0 L329.6 145.0 L328.4 140.1 L326.4 135.1 L323.6 130.2 L320.1 125.4 L315.8 120.6 L310.8 116.0 L305.2 111.4 L298.9 106.9 L291.9 102.5 L284.4 98.3 L276.4 94.2 L267.9 90.2 L259.0 86.4 L249.7 82.8 L240.2 79.4 L230.3 76.2 L220.3 73.1 L210.2 70.3 L200.0 67.7 L189.8 65.4 L179.7 63.2 L169.7 61.3 L159.8 59.6 L150.3 58.2 L141.0 57.1 L132.1 56.2 L123.6 55.5 L115.6 55.1 L108.1 55.0 L101.1 55.1 L94.8 55.5 L89.2 56.2 L84.2 57.1 L79.9 58.2 L76.4 59.6 L73.6 61.3 L71.6 63.2 L70.4 65.4 L70.0 67.7 L70.4 70.3 L71.6 73.1 L73.6 76.2 L76.4 79.4 L79.9 82.8 L84.2 86.4 L89.2 90.2 L94.8 94.2 L101.1 98.3 L108.1 102.5 L115.6 106.9 L123.6 111.4 L132.1 116.0 L141.0 120.6 L150.3 125.4 L159.8 130.2 L169.7 135.1 L179.7 140.1 L189.8 145.0 L200.0 150.0"/>
+<path class="dg-arm" d="M295.9650193272222 202.80068028758063L329.5650193272222 219.60068028758064M329.5650193272222 202.80068028758063L295.9650193272222 219.60068028758064"/><ellipse class="dg-rotor" cx="295.9650193272222" cy="202.80068028758063" rx="9.6" ry="4.2"/><ellipse class="dg-rotor" cx="329.5650193272222" cy="202.80068028758063" rx="9.6" ry="4.2"/><ellipse class="dg-rotor" cx="329.5650193272222" cy="219.60068028758064" rx="9.6" ry="4.2"/><ellipse class="dg-rotor" cx="295.9650193272222" cy="219.60068028758064" rx="9.6" ry="4.2"/><rect class="dg-body" x="306.7650193272222" y="207.60068028758064" width="12.0" height="7.199999999999999" rx="1.5"/>
+<path class="dg-ghost" d="M146.87598523413962 69.70376294574682L180.47598523413964 86.50376294574683M180.47598523413964 69.70376294574682L146.87598523413962 86.50376294574683"/><ellipse class="dg-ghost" cx="146.87598523413962" cy="69.70376294574682" rx="9.6" ry="4.2"/><ellipse class="dg-ghost" cx="180.47598523413964" cy="69.70376294574682" rx="9.6" ry="4.2"/><ellipse class="dg-ghost" cx="180.47598523413964" cy="86.50376294574683" rx="9.6" ry="4.2"/><ellipse class="dg-ghost" cx="146.87598523413962" cy="86.50376294574683" rx="9.6" ry="4.2"/>
+<text class="dg-label" x="289" y="197" text-anchor="end">real</text>
+<text class="dg-label" x="190" y="100">simulated</text>
+<path class="dg-cone" d="M40 30L200 150"/>
+<rect class="dg-cam" x="32" y="24" width="16" height="12" rx="2"/><circle class="dg-target" cx="40" cy="30" r="3"/>
+<path class="dg-cone" d="M360 30L200 150"/>
+<rect class="dg-cam" x="352" y="24" width="16" height="12" rx="2"/><circle class="dg-target" cx="360" cy="30" r="3"/>
+<path class="dg-cone" d="M40 270L200 150"/>
+<rect class="dg-cam" x="32" y="264" width="16" height="12" rx="2"/><circle class="dg-target" cx="40" cy="270" r="3"/>
+<path class="dg-cone" d="M360 270L200 150"/>
+<rect class="dg-cam" x="352" y="264" width="16" height="12" rx="2"/><circle class="dg-target" cx="360" cy="270" r="3"/>
+</svg>

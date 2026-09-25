@@ -1,0 +1,363 @@
+/* ============================================================
+   layout.css: page frame, top bar, hero, sections, footer.
+   ============================================================ */
+
+.wrap {
+	max-width: var(--page);
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+/* ── Top bar ───────────────────────────────────────────────── */
+.topbar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: color-mix(in srgb, var(--bg) 88%, transparent);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid var(--line);
+}
+
+.topbar-in {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	min-height: 4rem;
+}
+
+.brand {
+	font-family: var(--display);
+	font-weight: 700;
+	font-size: 1.125rem;
+	text-decoration: none;
+	margin-right: auto;
+}
+
+.topbar ul {
+	display: flex;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.95rem;
+}
+
+.topbar nav a {
+	text-decoration: none;
+}
+
+.theme-toggle {
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	border: 1px solid var(--line);
+	background: var(--surface);
+	display: grid;
+	place-items: center;
+	padding: 0;
+}
+
+.theme-toggle svg {
+	width: 1.1rem;
+	height: 1.1rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+}
+
+.theme-toggle:hover {
+	border-color: var(--accent);
+	color: var(--accent-text);
+}
+
+/* ── Hero: identity column and about column ────────────────── */
+.hero {
+	display: grid;
+	grid-template-columns: 18.5rem 1fr;
+	gap: 3.5rem;
+	padding-block: 4rem;
+}
+
+.hero-id {
+	display: grid;
+	gap: 0.7rem;
+	justify-items: center;
+	align-content: start;
+	text-align: center;
+}
+
+.portrait {
+	width: 13.75rem;
+	height: 13.75rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 0.6rem;
+	box-shadow: 0 0 0 6px var(--surface), 0 0 0 7px var(--line);
+}
+
+.portrait img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 30%;
+}
+
+.hero h1 {
+	font-size: 2.4rem;
+	font-weight: 800;
+	line-height: 1.05;
+}
+
+.role {
+	font-family: var(--display);
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--accent-text);
+}
+
+.employer {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+	margin-top: 0.2rem;
+	padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+	border-radius: 999px;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	font-size: 0.95rem;
+	text-align: left;
+}
+
+.employer img {
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 50%;
+	background: #ffffff;
+	flex: none;
+}
+
+.employer a {
+	text-decoration: none;
+}
+
+.employer strong {
+	letter-spacing: 0.06em;
+}
+
+.aff {
+	color: var(--muted);
+}
+
+/* Email is the one way to get in touch, so it gets a line of its own. */
+.email {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	width: 100%;
+	max-width: 17rem;
+	margin-top: 0.5rem;
+	padding: 0.55rem 1rem;
+	border-radius: 999px;
+	background: var(--accent);
+	color: var(--accent-ink);
+	font-weight: 700;
+	font-size: 0.95rem;
+	text-decoration: none;
+}
+
+.email:hover {
+	color: var(--accent-ink);
+	filter: brightness(1.08);
+}
+
+.email svg {
+	width: 1.05rem;
+	height: 1.05rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	flex: none;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.links a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding: 0.35rem 0.85rem;
+	border-radius: 999px;
+	border: 1.5px solid var(--line);
+	background: var(--surface);
+}
+
+.links a:hover {
+	border-color: var(--accent);
+}
+
+.hero-about {
+	display: grid;
+	gap: 2rem;
+	align-content: start;
+}
+
+.bio {
+	display: grid;
+	gap: 0.9rem;
+	font-size: 1.25rem;
+	line-height: 1.55;
+	max-width: var(--measure);
+}
+
+.hero-cols {
+	display: grid;
+	grid-template-columns: 1fr 1.6fr;
+	gap: 2rem;
+}
+
+.label {
+	font-family: var(--text);
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+	margin-bottom: 0.75rem;
+}
+
+.interests {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.4rem;
+}
+
+.interests li {
+	display: flex;
+	gap: 0.65rem;
+	align-items: baseline;
+}
+
+.interests li::before {
+	content: "";
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 2px;
+	background: var(--accent);
+	flex: none;
+	transform: translateY(-0.1rem);
+}
+
+.skills {
+	display: grid;
+	gap: 0.85rem;
+	margin: 0;
+}
+
+.skills div {
+	display: grid;
+	gap: 0.35rem;
+}
+
+.skills dt {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--muted);
+}
+
+.skills dd {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+}
+
+.skills span {
+	font-size: 0.9rem;
+	padding: 0.1rem 0.6rem;
+	border-radius: 6px;
+	background: var(--soft);
+}
+
+/* ── Sections ──────────────────────────────────────────────── */
+.section {
+	border-top: 1px solid var(--line);
+	padding-block: 4rem;
+}
+
+.section-head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.75rem 1rem;
+	margin-bottom: 1.75rem;
+}
+
+.section h2 {
+	font-size: 2.75rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.subhead {
+	font-size: 1.5rem;
+	margin: 3rem 0 0.75rem;
+}
+
+/* ── Footer ────────────────────────────────────────────────── */
+.footer {
+	border-top: 1px solid var(--line);
+	padding-block: 2.5rem;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+.footer-in {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+/* ── Narrow screens ────────────────────────────────────────── */
+@media (max-width: 52rem) {
+	.topbar nav {
+		display: none;
+	}
+
+	.hero,
+	.hero-cols {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero {
+		padding-block: 2.5rem 3rem;
+	}
+
+	.section {
+		padding-block: 3rem;
+	}
+
+	.section h2 {
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 30rem) {
+	.wrap {
+		padding-inline: 1rem;
+	}
+}

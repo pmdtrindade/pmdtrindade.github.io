@@ -1,0 +1,463 @@
+/* ============================================================
+   experience.css: the two views of the Experience section.
+   Columns are the content itself; the timeline is drawn by site.js
+   from the same entries.
+   ============================================================ */
+
+/* ── View switch (shared look with the range switch) ───────── */
+.view-switch,
+.range-switch {
+	display: inline-flex;
+	gap: 2px;
+	padding: 3px;
+	border: 1.5px solid var(--ink);
+	border-radius: 999px;
+}
+
+.view-switch button,
+.range-switch button {
+	border: 0;
+	background: none;
+	border-radius: 999px;
+	padding: 0.35rem 0.9rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+}
+
+.range-switch {
+	border-width: 1px;
+	border-color: var(--line);
+}
+
+.range-switch button {
+	font-size: 0.8rem;
+	padding: 0.25rem 0.75rem;
+}
+
+.view-switch svg {
+	width: 1rem;
+	height: 1rem;
+	fill: currentColor;
+}
+
+.view-switch button[aria-pressed="true"],
+.range-switch button[aria-pressed="true"] {
+	background: var(--ink);
+	color: var(--bg);
+}
+
+/* ── Columns ───────────────────────────────────────────────── */
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	align-items: start;
+}
+
+.col h3 {
+	font-size: 1.25rem;
+	padding-bottom: 0.6rem;
+	border-bottom: 3px solid var(--c);
+}
+
+.col[data-col="work"] {
+	--c: var(--lane-work);
+}
+
+.col[data-col="education"] {
+	--c: var(--lane-education);
+}
+
+.col[data-col="community"] {
+	--c: var(--lane-community);
+}
+
+/* One organisation, with its roles listed underneath, as on LinkedIn. */
+.org {
+	padding-block: 1.25rem;
+	border-bottom: 1px solid var(--line);
+}
+
+.org-head {
+	display: grid;
+	grid-template-columns: 2.75rem 1fr;
+	gap: 0.8rem;
+	align-items: center;
+}
+
+.logo {
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 10px;
+	background: #ffffff;
+	border: 1px solid var(--line);
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.logo img {
+	width: 82%;
+	height: 82%;
+	object-fit: contain;
+}
+
+.org h4 {
+	font-size: 1.15rem;
+	line-height: 1.2;
+}
+
+.org h4 a {
+	text-decoration: none;
+}
+
+.org h4 a:hover {
+	text-decoration: underline;
+}
+
+.org-meta {
+	font-size: 0.85rem;
+	color: var(--muted);
+}
+
+.roles {
+	list-style: none;
+	margin: 0.6rem 0 0 1.35rem;
+	padding: 0 0 0 1.4rem;
+	border-left: 2px solid var(--line);
+}
+
+.ent {
+	position: relative;
+	padding-block: 0.6rem;
+	display: grid;
+	gap: 0.1rem;
+}
+
+/* A dot on the line joins each role to its organisation. */
+.ent::before {
+	content: "";
+	position: absolute;
+	left: calc(-1.4rem - 5px);
+	top: 1.05rem;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--c);
+}
+
+.when {
+	font-size: 0.85rem;
+	color: var(--muted);
+	font-variant-numeric: tabular-nums;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem 0.5rem;
+}
+
+.ent h5 {
+	font-family: var(--display);
+	font-size: 1.02rem;
+	line-height: 1.3;
+	letter-spacing: -0.01em;
+	margin: 0;
+}
+
+.tag {
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+	padding: 0 0.35rem;
+}
+
+.tag.award {
+	border-color: var(--accent);
+	color: var(--ink);
+	background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.pts {
+	margin: 0.5rem 0 0;
+	padding-left: 1.1rem;
+	font-size: 0.95rem;
+	display: grid;
+	gap: 0.35rem;
+}
+
+/* site.js adds this button and hides the points until it is pressed. */
+.more {
+	justify-self: start;
+	margin-top: 0.4rem;
+	border: 0;
+	background: none;
+	padding: 0;
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: var(--accent-text);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.more::after {
+	content: "+";
+	font-size: 1.05rem;
+	line-height: 1;
+}
+
+.more[aria-expanded="true"]::after {
+	content: "\2212";
+}
+
+/* ── Timeline ──────────────────────────────────────────────── */
+.timeline-bar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.hint {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+.hint::before {
+	content: "";
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	background: var(--accent);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	from {
+		box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent);
+	}
+
+	to {
+		box-shadow: 0 0 0 0.75rem transparent;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.hint::before {
+		animation: none;
+	}
+}
+
+.timeline-scroll {
+	overflow-x: auto;
+}
+
+.timeline {
+	min-width: 44rem;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.lane {
+	display: grid;
+	grid-template-columns: 9rem 1fr;
+	align-items: center;
+}
+
+.lane > span {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--muted);
+}
+
+.track {
+	position: relative;
+	height: 2.9rem;
+	border-bottom: 1px dashed var(--line);
+}
+
+/* Positions come from site.js as percentages of the axis. */
+.bar {
+	position: absolute;
+	top: 0.5rem;
+	height: 1.9rem;
+	left: calc(var(--s) * 1%);
+	/* A small gap, so bars that meet end to end still read as two. */
+	width: calc((var(--e) - var(--s)) * 1% - 3px);
+	border: 0;
+	border-radius: 999px;
+	background: var(--c);
+	color: var(--bg);
+	font-size: 0.8rem;
+	font-weight: 700;
+	padding: 0 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.3rem;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.bar span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bar::after {
+	content: "+";
+	font-size: 1rem;
+	opacity: 0.85;
+}
+
+/* A bar that started before the visible range. */
+.bar.clipped {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.bar:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.bar[aria-pressed="true"] {
+	box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--ink);
+}
+
+.bar[aria-pressed="true"]::after {
+	content: "\25CF";
+	font-size: 0.5rem;
+}
+
+.pin {
+	position: absolute;
+	top: 0.8rem;
+	left: calc(var(--s) * 1%);
+	width: 1.25rem;
+	height: 1.25rem;
+	margin-left: -0.625rem;
+	border-radius: 50%;
+	border: 2.5px solid var(--c);
+	background: var(--bg);
+	padding: 0;
+	transition: transform 0.15s;
+}
+
+.pin:hover {
+	transform: scale(1.2);
+}
+
+.pin[aria-pressed="true"] {
+	background: var(--c);
+	box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--ink);
+}
+
+.pin-label {
+	position: absolute;
+	top: -0.15rem;
+	left: calc(var(--s) * 1% + 0.85rem);
+	font-size: 0.7rem;
+	color: var(--muted);
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+.axis {
+	position: relative;
+	height: 1.4rem;
+	margin-left: 9rem;
+	font-size: 0.75rem;
+	color: var(--muted);
+	font-variant-numeric: tabular-nums;
+}
+
+.axis span {
+	position: absolute;
+	left: calc(var(--s) * 1%);
+	transform: translateX(-50%);
+}
+
+/* The last year sits at the right edge; keep its label inside the box. */
+.axis span.end {
+	transform: translateX(-100%);
+}
+
+.timeline-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.1rem;
+	margin-top: 0.6rem;
+	font-size: 0.75rem;
+	color: var(--muted);
+}
+
+.timeline-legend i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.4rem;
+}
+
+.lg-bar {
+	width: 1.1rem;
+	height: 0.5rem;
+	border-radius: 999px;
+	background: var(--muted);
+}
+
+.lg-pin {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	border: 2px solid var(--muted);
+}
+
+.timeline-detail {
+	--c: var(--accent);
+	margin-top: 1.5rem;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	padding: 1.5rem 1.75rem;
+	display: grid;
+	grid-template-columns: 15rem 1fr;
+	gap: 1.75rem;
+}
+
+.timeline-detail h3 {
+	font-size: 1.45rem;
+	margin: 0.3rem 0;
+}
+
+.timeline-detail .pts {
+	margin: 0;
+	font-size: 1rem;
+}
+
+/* An organisation's roles, repeated in the panel. */
+.timeline-detail .roles {
+	margin: 0;
+}
+
+@media (max-width: 52rem) {
+	.columns,
+	.timeline-detail {
+		grid-template-columns: 1fr;
+	}
+
+	.columns {
+		gap: 2.5rem;
+	}
+}

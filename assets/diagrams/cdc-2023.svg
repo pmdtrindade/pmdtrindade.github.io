@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="A network where every message is delayed by the same time, and the agents' states still settling to agreement">
+<style>.dg-plane{fill:color-mix(in srgb,var(--steel,#2f5f8a) 10%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1;stroke-opacity:.5}
+.dg-grid{stroke:var(--line,#d2d7dd);stroke-width:1}
+.dg-axis{fill:none;stroke:var(--muted,#56606b);stroke-width:1.3}
+.dg-label{fill:var(--muted,#56606b);font:700 11px 'Atkinson Hyperlegible',system-ui,sans-serif;letter-spacing:.02em}
+.dg-name{fill:var(--ink,#1b2127);font:700 12px 'Bricolage Grotesque',system-ui,sans-serif}
+.dg-node{fill:var(--surface,#fafbfc);stroke:var(--ink,#1b2127);stroke-width:2}
+.dg-link{fill:none;stroke:var(--muted,#56606b);stroke-width:1.5;stroke-opacity:.7}
+.dg-comm{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.5;stroke-dasharray:6 3 1.5 3}
+.dg-ray{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5;stroke-dasharray:5 4}
+.dg-target{fill:var(--accent,#b0582d)}
+.dg-est{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5}
+.dg-faint{fill:none;stroke:var(--muted,#56606b);stroke-width:1.4;stroke-dasharray:4 4;stroke-opacity:.6}
+.dg-c1{fill:none;stroke:var(--accent,#b0582d);stroke-width:2.2}
+.dg-c2{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:2.2}
+.dg-c3{fill:none;stroke:var(--sage,#5e7d4f);stroke-width:2.2}
+.dg-c4{fill:none;stroke:var(--ink,#1b2127);stroke-width:2.2;stroke-opacity:.75}
+.dg-c5{fill:none;stroke:var(--muted,#56606b);stroke-width:2.2}
+.dg-mark{fill:var(--accent,#b0582d)}
+.dg-packet{fill:var(--accent,#b0582d)}
+.dg-arm{stroke:var(--ink,#1b2127);stroke-width:2.5;stroke-linecap:round}
+.dg-rotor{fill:color-mix(in srgb,var(--steel,#2f5f8a) 25%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1}
+.dg-ghost{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.2;stroke-dasharray:3 2}
+.dg-body{fill:var(--accent,#b0582d)}
+.dg-cam{fill:var(--ink,#1b2127)}
+.dg-cone{stroke:var(--accent,#b0582d);stroke-width:.8;stroke-opacity:.4}</style>
+<path class="dg-link" d="M70 70L175 45"/>
+<rect class="dg-packet" x="130.1" y="51.0" width="10" height="7" rx="1.5"/>
+<path class="dg-link" d="M175 45L285 75"/>
+<rect class="dg-packet" x="238.2" y="60.1" width="10" height="7" rx="1.5"/>
+<path class="dg-link" d="M70 70L120 160"/>
+<rect class="dg-packet" x="96.0" y="122.3" width="10" height="7" rx="1.5"/>
+<path class="dg-link" d="M120 160L240 160"/>
+<rect class="dg-packet" x="189.4" y="156.5" width="10" height="7" rx="1.5"/>
+<path class="dg-link" d="M240 160L285 75"/>
+<rect class="dg-packet" x="262.9" y="103.8" width="10" height="7" rx="1.5"/>
+<path class="dg-link" d="M175 45L240 160"/>
+<rect class="dg-packet" x="210.3" y="112.8" width="10" height="7" rx="1.5"/>
+<circle class="dg-node" cx="70" cy="70" r="13"/><text class="dg-name" x="70" y="74" text-anchor="middle">1</text>
+<circle class="dg-node" cx="175" cy="45" r="13"/><text class="dg-name" x="175" y="49" text-anchor="middle">2</text>
+<circle class="dg-node" cx="285" cy="75" r="13"/><text class="dg-name" x="285" y="79" text-anchor="middle">3</text>
+<circle class="dg-node" cx="120" cy="160" r="13"/><text class="dg-name" x="120" y="164" text-anchor="middle">4</text>
+<circle class="dg-node" cx="240" cy="160" r="13"/><text class="dg-name" x="240" y="164" text-anchor="middle">5</text>
+<text class="dg-label" x="390" y="150" text-anchor="end">messages in transit,</text><text class="dg-label" x="390" y="164" text-anchor="end">each τ late</text>
+<path class="dg-axis" d="M40 190V275H370"/>
+<path class="dg-c1" d="M40.0 200.0 L43.7 201.9 L47.3 204.1 L51.0 206.6 L54.7 209.2 L58.3 211.9 L62.0 214.7 L65.7 217.6 L69.3 220.5 L73.0 223.3 L76.7 226.1 L80.3 228.9 L84.0 231.5 L87.7 234.0 L91.3 236.4 L95.0 238.5 L98.7 240.6 L102.3 242.4 L106.0 244.1 L109.7 245.6 L113.3 246.8 L117.0 247.9 L120.7 248.9 L124.3 249.6 L128.0 250.2 L131.7 250.5 L135.3 250.8 L139.0 250.9 L142.7 250.9 L146.3 250.7 L150.0 250.4 L153.7 250.1 L157.3 249.6 L161.0 249.1 L164.7 248.5 L168.3 247.9 L172.0 247.2 L175.7 246.6 L179.3 245.8 L183.0 245.1 L186.7 244.4 L190.3 243.7 L194.0 243.0 L197.7 242.4 L201.3 241.7 L205.0 241.1 L208.7 240.6 L212.3 240.1 L216.0 239.6 L219.7 239.2 L223.3 238.8 L227.0 238.4 L230.7 238.1 L234.3 237.9 L238.0 237.7 L241.7 237.5 L245.3 237.4 L249.0 237.3 L252.7 237.3 L256.3 237.3 L260.0 237.3 L263.7 237.4 L267.3 237.5 L271.0 237.6 L274.7 237.7 L278.3 237.8 L282.0 238.0 L285.7 238.1 L289.3 238.3 L293.0 238.5 L296.7 238.7 L300.3 238.8 L304.0 239.0 L307.7 239.2 L311.3 239.3 L315.0 239.5 L318.7 239.7 L322.3 239.8 L326.0 239.9 L329.7 240.1 L333.3 240.2 L337.0 240.3 L340.7 240.4 L344.3 240.4 L348.0 240.5 L351.7 240.6 L355.3 240.6 L359.0 240.6 L362.7 240.6 L366.3 240.7 L370.0 240.7"/>
+<path class="dg-c2" d="M40.0 226.2 L43.7 227.4 L47.3 228.7 L51.0 230.0 L54.7 231.3 L58.3 232.5 L62.0 233.8 L65.7 235.0 L69.3 236.2 L73.0 237.3 L76.7 238.4 L80.3 239.3 L84.0 240.3 L87.7 241.1 L91.3 241.8 L95.0 242.5 L98.7 243.1 L102.3 243.6 L106.0 244.0 L109.7 244.3 L113.3 244.5 L117.0 244.7 L120.7 244.8 L124.3 244.9 L128.0 244.9 L131.7 244.8 L135.3 244.7 L139.0 244.5 L142.7 244.3 L146.3 244.1 L150.0 243.8 L153.7 243.5 L157.3 243.2 L161.0 242.9 L164.7 242.6 L168.3 242.3 L172.0 242.0 L175.7 241.7 L179.3 241.4 L183.0 241.1 L186.7 240.8 L190.3 240.5 L194.0 240.3 L197.7 240.0 L201.3 239.8 L205.0 239.6 L208.7 239.4 L212.3 239.3 L216.0 239.2 L219.7 239.1 L223.3 239.0 L227.0 238.9 L230.7 238.8 L234.3 238.8 L238.0 238.8 L241.7 238.8 L245.3 238.8 L249.0 238.8 L252.7 238.9 L256.3 238.9 L260.0 239.0 L263.7 239.0 L267.3 239.1 L271.0 239.2 L274.7 239.2 L278.3 239.3 L282.0 239.4 L285.7 239.5 L289.3 239.6 L293.0 239.6 L296.7 239.7 L300.3 239.8 L304.0 239.8 L307.7 239.9 L311.3 240.0 L315.0 240.0 L318.7 240.1 L322.3 240.1 L326.0 240.2 L329.7 240.2 L333.3 240.2 L337.0 240.2 L340.7 240.3 L344.3 240.3 L348.0 240.3 L351.7 240.3 L355.3 240.3 L359.0 240.3 L362.7 240.3 L366.3 240.3 L370.0 240.3"/>
+<path class="dg-c3" d="M40.0 250.5 L43.7 248.9 L47.3 247.4 L51.0 246.0 L54.7 244.6 L58.3 243.2 L62.0 242.0 L65.7 240.8 L69.3 239.7 L73.0 238.7 L76.7 237.8 L80.3 237.0 L84.0 236.3 L87.7 235.8 L91.3 235.3 L95.0 234.9 L98.7 234.6 L102.3 234.4 L106.0 234.2 L109.7 234.2 L113.3 234.2 L117.0 234.3 L120.7 234.4 L124.3 234.6 L128.0 234.8 L131.7 235.1 L135.3 235.4 L139.0 235.8 L142.7 236.1 L146.3 236.5 L150.0 236.9 L153.7 237.3 L157.3 237.6 L161.0 238.0 L164.7 238.4 L168.3 238.7 L172.0 239.1 L175.7 239.4 L179.3 239.7 L183.0 240.0 L186.7 240.2 L190.3 240.5 L194.0 240.7 L197.7 240.8 L201.3 241.0 L205.0 241.1 L208.7 241.2 L212.3 241.3 L216.0 241.4 L219.7 241.4 L223.3 241.4 L227.0 241.4 L230.7 241.4 L234.3 241.4 L238.0 241.4 L241.7 241.3 L245.3 241.2 L249.0 241.2 L252.7 241.1 L256.3 241.0 L260.0 240.9 L263.7 240.8 L267.3 240.7 L271.0 240.6 L274.7 240.5 L278.3 240.4 L282.0 240.4 L285.7 240.3 L289.3 240.2 L293.0 240.1 L296.7 240.0 L300.3 240.0 L304.0 239.9 L307.7 239.9 L311.3 239.8 L315.0 239.8 L318.7 239.7 L322.3 239.7 L326.0 239.7 L329.7 239.7 L333.3 239.7 L337.0 239.6 L340.7 239.6 L344.3 239.6 L348.0 239.7 L351.7 239.7 L355.3 239.7 L359.0 239.7 L362.7 239.7 L366.3 239.7 L370.0 239.7"/>
+<path class="dg-c4" d="M40.0 250.9 L43.7 247.7 L47.3 244.7 L51.0 241.9 L54.7 239.3 L58.3 236.9 L62.0 234.8 L65.7 232.9 L69.3 231.3 L73.0 229.8 L76.7 228.7 L80.3 227.7 L84.0 227.0 L87.7 226.5 L91.3 226.2 L95.0 226.1 L98.7 226.1 L102.3 226.3 L106.0 226.7 L109.7 227.1 L113.3 227.7 L117.0 228.4 L120.7 229.1 L124.3 229.9 L128.0 230.7 L131.7 231.6 L135.3 232.5 L139.0 233.4 L142.7 234.4 L146.3 235.2 L150.0 236.1 L153.7 237.0 L157.3 237.8 L161.0 238.5 L164.7 239.3 L168.3 239.9 L172.0 240.5 L175.7 241.1 L179.3 241.6 L183.0 242.0 L186.7 242.4 L190.3 242.7 L194.0 242.9 L197.7 243.1 L201.3 243.3 L205.0 243.4 L208.7 243.4 L212.3 243.4 L216.0 243.4 L219.7 243.3 L223.3 243.2 L227.0 243.1 L230.7 243.0 L234.3 242.8 L238.0 242.6 L241.7 242.4 L245.3 242.2 L249.0 241.9 L252.7 241.7 L256.3 241.5 L260.0 241.3 L263.7 241.0 L267.3 240.8 L271.0 240.6 L274.7 240.4 L278.3 240.3 L282.0 240.1 L285.7 239.9 L289.3 239.8 L293.0 239.7 L296.7 239.5 L300.3 239.4 L304.0 239.4 L307.7 239.3 L311.3 239.2 L315.0 239.2 L318.7 239.2 L322.3 239.2 L326.0 239.1 L329.7 239.2 L333.3 239.2 L337.0 239.2 L340.7 239.2 L344.3 239.3 L348.0 239.3 L351.7 239.3 L355.3 239.4 L359.0 239.4 L362.7 239.5 L366.3 239.6 L370.0 239.6"/>
+</svg>

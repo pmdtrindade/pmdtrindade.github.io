@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="The cost against the coupling gain for three cases: each curve is convex, with its best gain marked">
+<style>.dg-plane{fill:color-mix(in srgb,var(--steel,#2f5f8a) 10%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1;stroke-opacity:.5}
+.dg-grid{stroke:var(--line,#d2d7dd);stroke-width:1}
+.dg-axis{fill:none;stroke:var(--muted,#56606b);stroke-width:1.3}
+.dg-label{fill:var(--muted,#56606b);font:700 11px 'Atkinson Hyperlegible',system-ui,sans-serif;letter-spacing:.02em}
+.dg-name{fill:var(--ink,#1b2127);font:700 12px 'Bricolage Grotesque',system-ui,sans-serif}
+.dg-node{fill:var(--surface,#fafbfc);stroke:var(--ink,#1b2127);stroke-width:2}
+.dg-link{fill:none;stroke:var(--muted,#56606b);stroke-width:1.5;stroke-opacity:.7}
+.dg-comm{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.5;stroke-dasharray:6 3 1.5 3}
+.dg-ray{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5;stroke-dasharray:5 4}
+.dg-target{fill:var(--accent,#b0582d)}
+.dg-est{fill:none;stroke:var(--accent,#b0582d);stroke-width:1.5}
+.dg-faint{fill:none;stroke:var(--muted,#56606b);stroke-width:1.4;stroke-dasharray:4 4;stroke-opacity:.6}
+.dg-c1{fill:none;stroke:var(--accent,#b0582d);stroke-width:2.2}
+.dg-c2{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:2.2}
+.dg-c3{fill:none;stroke:var(--sage,#5e7d4f);stroke-width:2.2}
+.dg-c4{fill:none;stroke:var(--ink,#1b2127);stroke-width:2.2;stroke-opacity:.75}
+.dg-c5{fill:none;stroke:var(--muted,#56606b);stroke-width:2.2}
+.dg-mark{fill:var(--accent,#b0582d)}
+.dg-packet{fill:var(--accent,#b0582d)}
+.dg-arm{stroke:var(--ink,#1b2127);stroke-width:2.5;stroke-linecap:round}
+.dg-rotor{fill:color-mix(in srgb,var(--steel,#2f5f8a) 25%,transparent);stroke:var(--steel,#2f5f8a);stroke-width:1}
+.dg-ghost{fill:none;stroke:var(--steel,#2f5f8a);stroke-width:1.2;stroke-dasharray:3 2}
+.dg-body{fill:var(--accent,#b0582d)}
+.dg-cam{fill:var(--ink,#1b2127)}
+.dg-cone{stroke:var(--accent,#b0582d);stroke-width:.8;stroke-opacity:.4}</style>
+<path class="dg-axis" d="M45 30V245H370"/>
+<path class="dg-c1" d="M61.2 46.8 L64.5 73.7 L67.8 93.5 L71.0 108.5 L74.2 120.3 L77.5 129.7 L80.8 137.3 L84.0 143.5 L87.2 148.7 L90.5 153.1 L93.8 156.7 L97.0 159.8 L100.2 162.5 L103.5 164.7 L106.8 166.6 L110.0 168.3 L113.2 169.6 L116.5 170.8 L119.8 171.8 L123.0 172.6 L126.2 173.3 L129.5 173.8 L132.8 174.2 L136.0 174.5 L139.2 174.8 L142.5 174.9 L145.8 175.0 L149.0 175.0 L152.2 174.9 L155.5 174.8 L158.8 174.6 L162.0 174.4 L165.2 174.2 L168.5 173.9 L171.8 173.5 L175.0 173.1 L178.2 172.7 L181.5 172.3 L184.8 171.8 L188.0 171.3 L191.2 170.8 L194.5 170.2 L197.8 169.7 L201.0 169.1 L204.2 168.5 L207.5 167.9 L210.8 167.2 L214.0 166.6 L217.2 165.9 L220.5 165.2 L223.8 164.5 L227.0 163.8 L230.2 163.1 L233.5 162.4 L236.8 161.6 L240.0 160.9 L243.2 160.1 L246.5 159.3 L249.8 158.5 L253.0 157.8 L256.2 157.0 L259.5 156.1 L262.8 155.3 L266.0 154.5 L269.2 153.7 L272.5 152.8 L275.8 152.0 L279.0 151.2 L282.2 150.3 L285.5 149.4 L288.8 148.6 L292.0 147.7 L295.2 146.8 L298.5 146.0 L301.8 145.1 L305.0 144.2 L308.2 143.3 L311.5 142.4 L314.8 141.5 L318.0 140.6 L321.2 139.7 L324.5 138.8 L327.8 137.9 L331.0 137.0 L334.2 136.0 L337.5 135.1 L340.8 134.2 L344.0 133.3 L347.2 132.3 L350.5 131.4 L353.8 130.5 L357.0 129.5 L360.2 128.6 L363.5 127.6 L366.8 126.7 L370.0 125.7"/>
+<path class="dg-faint" d="M150 175V245"/>
+<path class="dg-mark" d="M145 170l10 10m0-10l-10 10" style="stroke:var(--ink,#1b2127);stroke-width:2"/>
+<path class="dg-c2" d="M67.8 50.6 L71.0 64.7 L74.2 75.8 L77.5 84.8 L80.8 92.2 L84.0 98.3 L87.2 103.5 L90.5 108.0 L93.8 111.8 L97.0 115.1 L100.2 118.0 L103.5 120.5 L106.8 122.8 L110.0 124.8 L113.2 126.5 L116.5 128.1 L119.8 129.5 L123.0 130.7 L126.2 131.9 L129.5 132.9 L132.8 133.8 L136.0 134.6 L139.2 135.3 L142.5 135.9 L145.8 136.5 L149.0 137.0 L152.2 137.5 L155.5 137.9 L158.8 138.3 L162.0 138.6 L165.2 138.9 L168.5 139.1 L171.8 139.3 L175.0 139.5 L178.2 139.6 L181.5 139.8 L184.8 139.8 L188.0 139.9 L191.2 140.0 L194.5 140.0 L197.8 140.0 L201.0 140.0 L204.2 140.0 L207.5 139.9 L210.8 139.9 L214.0 139.8 L217.2 139.7 L220.5 139.6 L223.8 139.5 L227.0 139.4 L230.2 139.2 L233.5 139.1 L236.8 138.9 L240.0 138.8 L243.2 138.6 L246.5 138.4 L249.8 138.2 L253.0 138.0 L256.2 137.8 L259.5 137.6 L262.8 137.4 L266.0 137.2 L269.2 136.9 L272.5 136.7 L275.8 136.5 L279.0 136.2 L282.2 136.0 L285.5 135.7 L288.8 135.4 L292.0 135.2 L295.2 134.9 L298.5 134.6 L301.8 134.3 L305.0 134.1 L308.2 133.8 L311.5 133.5 L314.8 133.2 L318.0 132.9 L321.2 132.6 L324.5 132.3 L327.8 132.0 L331.0 131.7 L334.2 131.3 L337.5 131.0 L340.8 130.7 L344.0 130.4 L347.2 130.1 L350.5 129.7 L353.8 129.4 L357.0 129.1 L360.2 128.7 L363.5 128.4 L366.8 128.1 L370.0 127.7"/>
+<path class="dg-faint" d="M200 140V245"/>
+<path class="dg-mark" d="M195 135l10 10m0-10l-10 10" style="stroke:var(--ink,#1b2127);stroke-width:2"/>
+<path class="dg-c3" d="M58.0 67.5 L61.2 103.3 L64.5 128.0 L67.8 145.9 L71.0 159.2 L74.2 169.5 L77.5 177.4 L80.8 183.7 L84.0 188.7 L87.2 192.7 L90.5 195.9 L93.8 198.4 L97.0 200.4 L100.2 201.9 L103.5 203.1 L106.8 203.9 L110.0 204.5 L113.2 204.9 L116.5 205.0 L119.8 205.0 L123.0 204.8 L126.2 204.4 L129.5 204.0 L132.8 203.4 L136.0 202.8 L139.2 202.0 L142.5 201.2 L145.8 200.3 L149.0 199.3 L152.2 198.3 L155.5 197.2 L158.8 196.1 L162.0 194.9 L165.2 193.7 L168.5 192.4 L171.8 191.1 L175.0 189.8 L178.2 188.4 L181.5 187.0 L184.8 185.6 L188.0 184.2 L191.2 182.7 L194.5 181.2 L197.8 179.7 L201.0 178.2 L204.2 176.7 L207.5 175.1 L210.8 173.5 L214.0 171.9 L217.2 170.3 L220.5 168.7 L223.8 167.1 L227.0 165.4 L230.2 163.8 L233.5 162.1 L236.8 160.4 L240.0 158.8 L243.2 157.1 L246.5 155.4 L249.8 153.6 L253.0 151.9 L256.2 150.2 L259.5 148.5 L262.8 146.7 L266.0 145.0 L269.2 143.2 L272.5 141.4 L275.8 139.7 L279.0 137.9 L282.2 136.1 L285.5 134.3 L288.8 132.5 L292.0 130.7 L295.2 128.9 L298.5 127.1 L301.8 125.3 L305.0 123.5 L308.2 121.7 L311.5 119.9 L314.8 118.1 L318.0 116.2 L321.2 114.4 L324.5 112.6 L327.8 110.7 L331.0 108.9 L334.2 107.0 L337.5 105.2 L340.8 103.3 L344.0 101.5 L347.2 99.6 L350.5 97.8 L353.8 95.9 L357.0 94.1 L360.2 92.2 L363.5 90.3 L366.8 88.5 L370.0 86.6"/>
+<path class="dg-faint" d="M120 205V245"/>
+<path class="dg-mark" d="M115 200l10 10m0-10l-10 10" style="stroke:var(--ink,#1b2127);stroke-width:2"/>
+<text class="dg-label" x="370" y="268" text-anchor="end">coupling gain γ</text>
+<text class="dg-label" x="18" y="140" transform="rotate(-90 18 140)" text-anchor="middle">cost</text>
+<text class="dg-label" x="365" y="232" text-anchor="end">one best gain per case</text>
+</svg>
