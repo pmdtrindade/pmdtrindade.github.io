@@ -146,6 +146,13 @@ function recall(key) {
 						const label = document.createElement("span");
 						label.className = "pin-label";
 						label.style.setProperty("--s", pct(i.at, from, to));
+						// The label sits right of the pin, unless a bar starts close
+						// enough after it to cover the text: then it goes left.
+						const crowded = items.some(function (o) {
+							return o.lane === lane && !o.pin && o.start > i.at &&
+								pct(o.start, from, to) - pct(i.at, from, to) < 15;
+						});
+						if (crowded) label.classList.add("left");
 						label.textContent = i.label;
 						track.append(b, label);
 					} else {
@@ -209,6 +216,8 @@ function recall(key) {
 			at.className = "org-meta";
 			at.textContent = orgName;
 			head.append(item.el.querySelector(".when").cloneNode(true), title, at);
+			const sup = item.el.querySelector(".sup");
+			if (sup) head.append(sup.cloneNode(true));
 			const points = item.el.querySelector(".pts").cloneNode(true);
 			points.removeAttribute("id");
 			points.hidden = false;
